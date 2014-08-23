@@ -23,10 +23,12 @@
   "homepage": "https://github.com/cosmosgenius/simple-rawbody",
   "devDependencies": {
     "blanket": "*",
+    "express": "^4.8.5",
     "grunt": "*",
-    "should": "*",
-    "mocha": "*",
     "grunt-mocha-test": "*",
+    "mocha": "*",
+    "should": "*",
+    "supertest": "^0.13.0",
     "travis-cov": "*"
   },
   "config": {
