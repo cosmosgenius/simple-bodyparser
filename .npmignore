@@ -1,2 +1,5 @@
 .travis.yml
 .gitattributes
+coverage
+coverage.html
+Gruntfile.js

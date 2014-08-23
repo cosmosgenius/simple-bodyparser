@@ -1,6 +1,6 @@
 {
   "name": "simple-rawbody",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Simple RawBody Parser for express with encoding set to utf-8",
   "main": "index.js",
   "scripts": {
