@@ -2,9 +2,12 @@
 'use strict';
 
 module.exports = function(options) {
+    options = options || {};
+    var encoding = options.encoding || 'utf8';
+
     return function(req, res, next) {
         var data = '';
-        req.setEncoding('utf8');
+        req.setEncoding(encoding);
         req.on('data', function(chunk) {
             data += chunk;
         });
