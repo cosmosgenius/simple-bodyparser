@@ -8,8 +8,8 @@ Gets the whole content in the request as a property rawbody with UTF-8 encodinng
 ## API
 
 ```js
-var rawBody = require('simple-rawbody')
-var typer      = require('media-typer')
+var rawBody = require('simple-rawbody');
+var app = require('express')();
 
 app.use(rawBody());
 app.use(function(req, res, next){
