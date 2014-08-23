@@ -5,13 +5,28 @@
 
 var bodyparser = require('../'),
     request = require('supertest'),
-    app = require('express')(),
+    http = require('http'),
     should = require('should');
 
+var server;
+
+function createServer(){
+    var _parser = bodyparser();
+    return http.createServer(function(req, res){
+        _parser(req, res, function(err){
+            if (err) {
+                res.statusCode = 500;
+                res.end(err.message);
+                return;
+            }
+            res.end(req.body);
+        });
+    });
+}
 
 describe('bodyparser', function() {
     before(function(){
-        request = request(app);
+        server = createServer();
     });
 
     it('should exist', function() {
@@ -24,17 +39,11 @@ describe('bodyparser', function() {
 
     it('should return a data', function(done) {
         var testDtr = 'hello this is a test';
-        app.use(bodyparser());
-
-        app.post('/',function(req) {
-            req.body.should.eql(testDtr);
-            done();
-        });
-
-        request
+    
+        request(server)
             .post('/')
             .send(testDtr)
-            .expect(200)
-            .end();
+            .expect(200,testDtr,done);
     });
 });
+

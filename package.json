@@ -25,7 +25,6 @@
   "homepage": "https://github.com/cosmosgenius/simple-bodyparser",
   "devDependencies": {
     "blanket": "*",
-    "express": "^4.8.5",
     "grunt": "*",
     "grunt-mocha-test": "*",
     "mocha": "*",
