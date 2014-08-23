@@ -1,14 +1,14 @@
 {
-  "name": "simple-rawbody",
-  "version": "0.0.8",
-  "description": "A Simple RawBody Parser for express with encoding set to utf-8",
+  "name": "simple-bodyparser",
+  "version": "0.0.1",
+  "description": "A Simple Body Parser for express with encoding set to utf-8",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmosgenius/simple-rawbody.git"
+    "url": "https://github.com/cosmosgenius/simple-bodyparser.git"
   },
   "keywords": [
     "rawbody",
@@ -18,9 +18,9 @@
   "author": "Sharat M R",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cosmosgenius/simple-rawbody/issues"
+    "url": "https://github.com/cosmosgenius/simple-bodyparser/issues"
   },
-  "homepage": "https://github.com/cosmosgenius/simple-rawbody",
+  "homepage": "https://github.com/cosmosgenius/simple-bodyparser",
   "devDependencies": {
     "blanket": "*",
     "express": "^4.8.5",
