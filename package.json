@@ -1,7 +1,7 @@
 {
   "name": "simple-bodyparser",
   "version": "0.0.2",
-  "description": "A Simple Body Parser for express with encoding set to utf-8",
+  "description": "A Simple Body Parser for express with default encoding set to utf-8",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
@@ -11,9 +11,11 @@
     "url": "https://github.com/cosmosgenius/simple-bodyparser.git"
   },
   "keywords": [
-    "rawbody",
+    "bodyparser",
     "middleware",
-    "express"
+    "express",
+    "body",
+    "parser"
   ],
   "author": "Sharat M R",
   "license": "MIT",
