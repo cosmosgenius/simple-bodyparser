@@ -12,3 +12,4 @@ deploy:
   on:
     tags: true
     repo: cosmosgenius/simple-rawbody
+    all_branches: true
