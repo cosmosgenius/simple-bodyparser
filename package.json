@@ -4,7 +4,7 @@
   "description": "A Simple RawBody Parser for express with encoding set to utf-8",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,16 @@
   },
   "homepage": "https://github.com/cosmosgenius/simple-rawbody",
   "devDependencies": {
-    "gulp": "^3.8.7"
+    "blanket": "*",
+    "grunt": "*",
+    "should": "*",
+    "mocha": "*",
+    "grunt-mocha-test": "*",
+    "travis-cov": "*"
+  },
+  "config": {
+    "travis-cov": {
+      "threshold": 100
+    }
   }
 }
