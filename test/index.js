@@ -3,31 +3,31 @@
 /*global describe, it, before*/
 'use strict';
 
-var rawbody = require('../'),
+var bodyparser = require('../'),
     request = require('supertest'),
     app = require('express')(),
     should = require('should');
 
 
-describe('rawbody', function() {
+describe('bodyparser', function() {
     before(function(){
         request = request(app);
     });
 
     it('should exist', function() {
-        should.exist(rawbody);
+        should.exist(bodyparser);
     });
 
     it('should return a function', function() {
-        rawbody().should.be.a.Function;
+        bodyparser().should.be.a.Function;
     });
 
     it('should return a data', function(done) {
         var testDtr = 'hello this is a test';
-        app.use(rawbody());
+        app.use(bodyparser());
 
         app.post('/',function(req) {
-            req.rawBody.should.eql(testDtr);
+            req.body.should.eql(testDtr);
             done();
         });
 

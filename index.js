@@ -12,7 +12,7 @@ module.exports = function(options) {
             data += chunk;
         });
         req.on('end', function() {
-            req.rawBody = data;
+            req.body = data;
             next();
         });
     };
