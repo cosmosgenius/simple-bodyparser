@@ -11,5 +11,5 @@ deploy:
     secure: KCjObD7wkYT+iYYYQbN1dJ1mak1MLkYg/CHE1ECGZfgeA3rGfl+w0/ZZvV4gy3njaXALfXJwCd3bFh49fTRMjhbnXSFozJG7Zu6NPtnBeqPMeWB3AcwKOrtBpsJne3gkQUCQZZVEIbsaG4Xbqw03KUuqH2xBgwLmfMoYnTWmnOg=
   on:
     tags: true
-    repo: cosmosgenius/simple-rawbody
+    repo: cosmosgenius/simple-bodyparser
     all_branches: true
