@@ -3,7 +3,6 @@
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
-[![Dependency Status][david-image]][david-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
@@ -53,8 +52,6 @@ app.use(function(req, res, next){
 [travis-url]: https://travis-ci.org/cosmosgenius/simple-bodyparser
 [coveralls-image]: https://img.shields.io/coveralls/cosmosgenius/simple-bodyparser.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/cosmosgenius/simple-bodyparser?branch=master
-[david-image]: http://img.shields.io/david/cosmosgenius/simple-bodyparser.svg?style=flat-square
-[david-url]: https://david-dm.org/cosmosgenius/simple-bodyparser
 [license-image]: http://img.shields.io/npm/l/simple-bodyparser.svg?style=flat-square
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/simple-bodyparser.svg?style=flat-square
