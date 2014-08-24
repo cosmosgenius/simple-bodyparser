@@ -1,6 +1,6 @@
 {
   "name": "simple-bodyparser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Simple Body Parser for express with default encoding set to utf-8",
   "main": "index.js",
   "scripts": {
