@@ -7,7 +7,7 @@
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
-Gets the whole content in the request as a property body with UTF-8 encoding
+Gets the whole content in the request body as a property to request object
 
 ### Install
 
