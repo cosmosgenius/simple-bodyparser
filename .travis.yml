@@ -13,3 +13,4 @@ deploy:
     tags: true
     repo: cosmosgenius/simple-bodyparser
     all_branches: true
+after_script: "npm install coveralls@2.10.0 && cat ./lcov.info | coveralls"
