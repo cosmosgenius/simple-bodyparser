@@ -1,11 +1,34 @@
 # simple-bodyparser
 
-[![NPM version](https://badge.fury.io/js/simple-bodyparser.svg)](http://badge.fury.io/js/simple-bodyparser)
-[![Build Status](https://travis-ci.org/cosmosgenius/simple-bodyparser.svg?branch=master)](https://travis-ci.org/cosmosgenius/simple-bodyparser)
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+[![Dependency Status][david-image]][david-url]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
 
-Gets the whole content in the request as a property body with UTF-8 encodinng
+Gets the whole content in the request as a property body with UTF-8 encoding
+
+### Install
+
+```sh
+$ npm install simple-bodyparser
+```
 
 ## API
+
+```js
+var bodyparser = require('simple-bodyparser');
+```
+
+### bodyparser(options)
+
+This middleware adds a `req.body` property which contains the request body with encoding defaulting to UTF-8
+
+#### Options
+- `encoding` property sets the encoding type, defaulting to UTF-8.
+
+## Example
 
 ```js
 var bodyparser = require('simple-bodyparser');
@@ -16,3 +39,23 @@ app.use(function(req, res, next){
   var body = req.body
 });
 ```
+
+## License
+
+[MIT](LICENSE)
+
+
+[npm-image]: https://img.shields.io/npm/v/simple-bodyparser.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/simple-bodyparser
+[github-tag]: http://img.shields.io/github/tag/cosmosgenius/simple-bodyparser.svg?style=flat-square
+[github-url]: https://github.com/cosmosgenius/simple-bodyparser/tags
+[travis-image]: https://img.shields.io/travis/cosmosgenius/simple-bodyparser.svg?style=flat-square
+[travis-url]: https://travis-ci.org/cosmosgenius/simple-bodyparser
+[coveralls-image]: https://img.shields.io/coveralls/cosmosgenius/simple-bodyparser.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/cosmosgenius/simple-bodyparser?branch=master
+[david-image]: http://img.shields.io/david/cosmosgenius/simple-bodyparser.svg?style=flat-square
+[david-url]: https://david-dm.org/cosmosgenius/simple-bodyparser
+[license-image]: http://img.shields.io/npm/l/simple-bodyparser.svg?style=flat-square
+[license-url]: LICENSE
+[downloads-image]: http://img.shields.io/npm/dm/simple-bodyparser.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/simple-bodyparser
