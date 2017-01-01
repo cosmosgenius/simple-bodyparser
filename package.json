@@ -4,7 +4,7 @@
   "description": "A Simple Body Parser for express with default encoding set to utf-8",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,19 +23,13 @@
     "url": "https://github.com/cosmosgenius/simple-bodyparser/issues"
   },
   "homepage": "https://github.com/cosmosgenius/simple-bodyparser",
-  "devDependencies": {
-    "blanket": "*",
-    "grunt": "*",
-    "grunt-mocha-test": "*",
-    "mocha": "*",
-    "mocha-lcov-reporter": "0.0.1",
-    "should": "*",
-    "supertest": "^0.13.0",
-    "travis-cov": "*"
+  "jest": {
+      "testEnvironment": "node",
+      "collectCoverage": true
   },
-  "config": {
-    "travis-cov": {
-      "threshold": 100
-    }
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "jest": "^18.1.0",
+    "supertest": "^0.13.0"
   }
 }

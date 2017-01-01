@@ -1,9 +1,8 @@
 language: node_js
 node_js:
-- '0.10'
-- '0.11'
-before_install: npm install -g grunt-cli
-install: npm install
+    - '4'
+    - '6'
+    - 'latest'
 deploy:
   provider: npm
   email: cosmosgenius@gmail.com
@@ -12,5 +11,6 @@ deploy:
   on:
     tags: true
     repo: cosmosgenius/simple-bodyparser
-    all_branches: true
-after_script: "npm install coveralls && cat ./lcov.info | coveralls"
+    branch: master
+after_success:
+    - bash <(curl -s https://codecov.io/bash

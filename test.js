@@ -1,17 +1,10 @@
-/*jslint node: true */
-/*jshint expr: true*/
-/*global describe, it, before*/
-'use strict';
+const request = require('supertest');
+const http = require('http');
 
-var bodyparser = require('../'),
-    request = require('supertest'),
-    http = require('http'),
-    should = require('should');
-
-var server;
+const bodyparser = require('./');
 
 function createServer(){
-    var _parser = bodyparser();
+    const _parser = bodyparser();
     return http.createServer(function(req, res){
         _parser(req, res, function(err){
             if (err) {
@@ -25,21 +18,18 @@ function createServer(){
 }
 
 describe('bodyparser', function() {
-    before(function(){
-        server = createServer();
-    });
-
     it('should exist', function() {
-        should.exist(bodyparser);
+        expect(bodyparser).toBeDefined();
     });
 
     it('should return a function', function() {
-        bodyparser().should.be.a.Function;
+        expect(bodyparser()).toBeInstanceOf(Function);
     });
 
     it('should return a data', function(done) {
-        var testDtr = 'hello this is a test';
-    
+        const testDtr = 'hello this is a test';
+        const server = createServer();
+
         request(server)
             .post('/')
             .send(testDtr)
