@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-    - '4'
-    - '6'
-    - 'node'
+- '4'
+- '6'
+- node
 deploy:
   provider: npm
   email: cosmosgenius@gmail.com
   api_key:
-    secure: KCjObD7wkYT+iYYYQbN1dJ1mak1MLkYg/CHE1ECGZfgeA3rGfl+w0/ZZvV4gy3njaXALfXJwCd3bFh49fTRMjhbnXSFozJG7Zu6NPtnBeqPMeWB3AcwKOrtBpsJne3gkQUCQZZVEIbsaG4Xbqw03KUuqH2xBgwLmfMoYnTWmnOg=
+    secure: IzzBvZQJT/BMGgiJoUQxY5vaZWFr2eynt9sE9CWX09LTY7g0syiw+Zi/5sL6jAn+JaVdAt45bmodiY2aBDJrI2Xvd03JS8x/z5Sufllv1KgySv5OhSJhluVz2QGMObGTuMJsupInvfBKpvLRZz6NRNOqPZklRAhnUPMpRE/PMII=
   on:
     tags: true
     repo: cosmosgenius/simple-bodyparser
     branch: master
 after_success:
-    - bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash)
