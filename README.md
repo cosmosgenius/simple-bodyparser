@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![Test coverage][coverage-image]][coverage-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
@@ -17,7 +17,7 @@ $ npm install simple-bodyparser
 ## API
 
 ```js
-var bodyparser = require('simple-bodyparser');
+const bodyparser = require('simple-bodyparser');
 ```
 
 ### bodyparser(options)
@@ -30,12 +30,12 @@ This middleware adds a `req.body` property which contains the request body with 
 ## Example
 
 ```js
-var bodyparser = require('simple-bodyparser');
-var app = require('express')();
+const bodyparser = require('simple-bodyparser');
+const app = require('express')();
 
 app.use(bodyparser());
 app.use(function(req, res, next){
-  var body = req.body
+  let body = req.body
 });
 ```
 
@@ -50,8 +50,8 @@ app.use(function(req, res, next){
 [github-url]: https://github.com/cosmosgenius/simple-bodyparser/tags
 [travis-image]: https://img.shields.io/travis/cosmosgenius/simple-bodyparser.svg?style=flat-square
 [travis-url]: https://travis-ci.org/cosmosgenius/simple-bodyparser
-[coveralls-image]: https://img.shields.io/coveralls/cosmosgenius/simple-bodyparser.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/cosmosgenius/simple-bodyparser?branch=master
+[coverage-image]: https://codecov.io/gh/cosmosgenius/simple-bodyparser/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/cosmosgenius/simple-bodyparser
 [license-image]: http://img.shields.io/npm/l/simple-bodyparser.svg?style=flat-square
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/simple-bodyparser.svg?style=flat-square
