@@ -1,5 +1,7 @@
 # simple-bodyparser
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cosmosgenius/simple-bodyparser.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coverage-image]][coverage-url]
